@@ -34,7 +34,7 @@ submit.addEventListener("click", function (e) {
     getWeather(city.value)
 });
 
-const getShangai = (city) => {
+const getTokyo = (city) => {
     cityName.innerHTML = city
     fetch('https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=' + city, options)
         .then(response => response.json())
@@ -48,7 +48,7 @@ const getShangai = (city) => {
         .catch(err => console.error(err));
 }
 
-const getBoston = (city) => {
+const getLondon = (city) => {
     cityName.innerHTML = city
     fetch('https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=' + city, options)
         .then(response => response.json())
@@ -90,8 +90,8 @@ const getKolkata = (city) => {
         .catch(err => console.error(err));
 }
 
-getShangai("Shangai")
-getBoston("Boston")
+getTokyo("Tokyo")
+getLondon("London")
 getNewYork("New York")
 getKolkata("Kolkata")
 getWeather("Delhi")
