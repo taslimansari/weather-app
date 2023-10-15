@@ -9,26 +9,26 @@
 </head>
 <body>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <img src="icon.jpg" alt="icon">
-      <a class="navbar-brand" href="#">Weather App</a>
+    <div class="container-fluid" style="background-color: #0d6efd; padding: 16px; color: #ffffff; margin-top: -10px; margin-bottom: 10px;">
+      <img src="icon.png" style="width: 40px; padding-right: 10px;" alt="icon">
+      <a class="navbar-brand" href="index.html" style="color: #ffffff; padding-right: 20px;">Weather LInk</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active text-bg-primary border-primary btn" aria-current="page" href="#">Home</a>
+          <li class="nav-item" style="background-color: #ffffff;">
+            <a class="nav-link active text-bg-primary border-primary btn" aria-current="page" href="index.html" >Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">About this App</a>
+            <a class="nav-link" href="about.html" style="color: #ffffff;">About Us</a>
           </li>
         </ul>
         <form class="d-flex" role="search">
           <input id="city" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success text-bg-primary border-primary" type="submit"
-            id="submit">Search</button>
+            id="submit" >Search</button>
         </form>
       </div>
     </div>
@@ -89,6 +89,94 @@
           </div>
         </div>
       </div>
+
+
+
+      <!-- Forecase section -->
+      <main>
+
+        
+      
+        <div class="album py-5 bg-body-tertiary">
+          <div class="container">
+            <h1 class="my-4 text-center">Forecast Section</h1>
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+              <div class="col">
+                <div class="card shadow-sm">
+                  
+                  <!-- image  -->
+                  <div class="card-body">
+                    <p class="card-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">This is a wider card with supporting text below as a natural introduction to additional content. </font><font style="vertical-align: inherit;">This content is a little longer.</font></font></p>
+                   
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  
+                  <!-- image  -->
+                  <div class="card-body">
+                    <p class="card-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">This is a wider card with supporting text below as a natural introduction to additional content. </font><font style="vertical-align: inherit;">This content is a little longer.</font></font></p>
+                   
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  
+                  <!-- image  -->
+                  <div class="card-body">
+                    <p class="card-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">This is a wider card with supporting text below as a natural introduction to additional content. </font><font style="vertical-align: inherit;">This content is a little longer.</font></font></p>
+                   
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col">
+                <div class="card shadow-sm">
+                  
+                  <!-- image  -->
+                  <div class="card-body">
+                    <p class="card-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">This is a wider card with supporting text below as a natural introduction to additional content. </font><font style="vertical-align: inherit;">This content is a little longer.</font></font></p>
+                   
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  
+                  <!-- image  -->
+                  <div class="card-body">
+                    <p class="card-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">This is a wider card with supporting text below as a natural introduction to additional content. </font><font style="vertical-align: inherit;">This content is a little longer.</font></font></p>
+                   
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  
+                  <!-- image  -->
+                  <div class="card-body">
+                    <p class="card-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">This is a wider card with supporting text below as a natural introduction to additional content. </font><font style="vertical-align: inherit;">This content is a little longer.</font></font></p>
+                   
+                  </div>
+                </div>
+              </div>
+      
+              
+            </div>
+          </div>
+        </div>
+      
+      </main>
+
+
+
+
+
+
+
       <h2 class="display-6 text-center mb-4">Weather of other common cities</h2>
       <div class="table-responsive">
         <table class="table text-center">
@@ -103,7 +191,7 @@
           </thead>
           <tbody>
             <tr>
-              <th scope="row" class="text-start" id="shangai">Shangai</th>
+              <th scope="row" class="text-start" id="shangai">Tokyo</th>
               <td><span id="temp_a"></span> °C</td>
               <td><span id="feels_like_a"></span> °C</td>
               <td><span id="humidity_a"></span> %</td>
