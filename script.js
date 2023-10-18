@@ -6,6 +6,9 @@ const options = {
     }
 };
 
+
+// Weather section API= RapidAPI Client
+
 const getWeather = (city) => {
     cityName.innerHTML = city
     fetch('https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=' + city, options)
@@ -95,3 +98,28 @@ getLondon("London")
 getNewYork("New York")
 getKolkata("Kolkata")
 getWeather("Delhi")
+
+
+// Forecast section API = geocoding openweathermap
+
+const cityValue=document.querySelector(".city-input");
+const searchButton = document.querySelector(".search-btn");
+
+//API key
+const API_KEY = "b866f677d1f37c2a8db200991e722a3e";
+
+const getCityCordinates =()=>{
+    const cityInput = cityName.value.trim();
+    if(!cityInput){
+        return;
+    }
+    const GEOCODING_API_URL=`http://api.openweathermap.org/geo/1.0/direct?q=${cityInput}&limit=5&appid=${API_KEY}`;
+}
+
+fetch(GEOCODING_API_URL).then(res=>res.json()).then(data=>{
+    console.log(data);
+}).catch(()=>{
+   alert("An error occured while fetching the cordinates");  
+});
+
+searchButton.addEventListener("click", getCityCordinates);
